@@ -191,6 +191,7 @@
             Controls.Add(lblEventName);
             Name = "Ticket_Manager";
             Text = "Ticket_Manager";
+            Load += Ticket_Manager_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewTickets).EndInit();
             ResumeLayout(false);
             PerformLayout();

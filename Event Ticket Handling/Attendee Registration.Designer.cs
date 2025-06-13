@@ -41,24 +41,25 @@
             // 
             // btnRegister
             // 
-            btnRegister.Location = new Point(412, 321);
+            btnRegister.BackColor = Color.SandyBrown;
+            btnRegister.Location = new Point(338, 319);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(94, 29);
+            btnRegister.Size = new Size(151, 50);
             btnRegister.TabIndex = 23;
             btnRegister.Text = "REGISTER";
-            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.UseVisualStyleBackColor = false;
             btnRegister.Click += btnRegister_Click;
             // 
             // txtConfirmPassword
             // 
-            txtConfirmPassword.Location = new Point(398, 250);
+            txtConfirmPassword.Location = new Point(426, 250);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.Size = new Size(125, 27);
             txtConfirmPassword.TabIndex = 22;
             // 
             // txtUseremail
             // 
-            txtUseremail.Location = new Point(398, 153);
+            txtUseremail.Location = new Point(426, 150);
             txtUseremail.Name = "txtUseremail";
             txtUseremail.Size = new Size(125, 27);
             txtUseremail.TabIndex = 21;
@@ -83,14 +84,14 @@
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(398, 198);
+            txtPassword.Location = new Point(426, 198);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(125, 27);
             txtPassword.TabIndex = 18;
             // 
             // txtName
             // 
-            txtName.Location = new Point(398, 101);
+            txtName.Location = new Point(426, 101);
             txtName.Name = "txtName";
             txtName.Size = new Size(125, 27);
             txtName.TabIndex = 17;
@@ -117,6 +118,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.NavajoWhite;
             ClientSize = new Size(800, 450);
             Controls.Add(btnRegister);
             Controls.Add(txtConfirmPassword);

@@ -68,6 +68,12 @@ namespace Event_Ticket_Handling
                 MessageBox.Show("Please enter a valid non-negative quantity.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            if (string.IsNullOrWhiteSpace(txtTickettype.Text))
+            {
+                MessageBox.Show("Please enter a ticket type.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
 
             Ticket ticket = new Ticket
             {
@@ -118,5 +124,9 @@ namespace Event_Ticket_Handling
             LoadTicketsToGrid();
         }
 
+        private void Ticket_Manager_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

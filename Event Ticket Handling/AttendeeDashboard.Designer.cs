@@ -66,38 +66,42 @@
             // 
             // btnRegisterForEvent
             // 
+            btnRegisterForEvent.BackColor = Color.DarkSalmon;
             btnRegisterForEvent.Location = new Point(162, 386);
             btnRegisterForEvent.Name = "btnRegisterForEvent";
             btnRegisterForEvent.Size = new Size(188, 55);
             btnRegisterForEvent.TabIndex = 3;
             btnRegisterForEvent.Text = "REGISTER FOR EVENT";
-            btnRegisterForEvent.UseVisualStyleBackColor = true;
+            btnRegisterForEvent.UseVisualStyleBackColor = false;
             btnRegisterForEvent.Click += button1_Click;
             // 
             // btnViewMyTickets
             // 
+            btnViewMyTickets.BackColor = Color.DarkSalmon;
             btnViewMyTickets.Location = new Point(435, 386);
             btnViewMyTickets.Name = "btnViewMyTickets";
             btnViewMyTickets.Size = new Size(188, 55);
             btnViewMyTickets.TabIndex = 4;
             btnViewMyTickets.Text = "VIEW MY TICKETS";
-            btnViewMyTickets.UseVisualStyleBackColor = true;
+            btnViewMyTickets.UseVisualStyleBackColor = false;
             btnViewMyTickets.Click += button2_Click;
             // 
             // btnLogout
             // 
+            btnLogout.BackColor = Color.Red;
             btnLogout.Location = new Point(685, 34);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(123, 52);
             btnLogout.TabIndex = 5;
             btnLogout.Text = "LOGOUT";
-            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.UseVisualStyleBackColor = false;
             btnLogout.Click += btnLogout_Click;
             // 
             // AttendeeDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MistyRose;
             ClientSize = new Size(833, 495);
             Controls.Add(btnLogout);
             Controls.Add(btnViewMyTickets);

@@ -72,28 +72,31 @@
             // 
             // btnLogin
             // 
+            btnLogin.BackColor = Color.SandyBrown;
             btnLogin.Location = new Point(345, 271);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(94, 29);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "LOGIN";
-            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
             // btnRegistration
             // 
+            btnRegistration.BackColor = Color.SandyBrown;
             btnRegistration.Location = new Point(259, 342);
             btnRegistration.Name = "btnRegistration";
             btnRegistration.Size = new Size(275, 47);
             btnRegistration.TabIndex = 5;
             btnRegistration.Text = "Don't have an account? Register here";
-            btnRegistration.UseVisualStyleBackColor = true;
+            btnRegistration.UseVisualStyleBackColor = false;
             btnRegistration.Click += btnRegistration_Click;
             // 
             // Attendee_Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.NavajoWhite;
             ClientSize = new Size(800, 450);
             Controls.Add(btnRegistration);
             Controls.Add(btnLogin);

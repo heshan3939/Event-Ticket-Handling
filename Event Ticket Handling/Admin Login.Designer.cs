@@ -69,18 +69,20 @@
             // 
             // btnAdminLogin
             // 
+            btnAdminLogin.BackColor = Color.Cyan;
             btnAdminLogin.Location = new Point(313, 282);
             btnAdminLogin.Name = "btnAdminLogin";
             btnAdminLogin.Size = new Size(163, 60);
             btnAdminLogin.TabIndex = 4;
             btnAdminLogin.Text = "ENTER";
-            btnAdminLogin.UseVisualStyleBackColor = true;
+            btnAdminLogin.UseVisualStyleBackColor = false;
             btnAdminLogin.Click += btnAdminLogin_Click;
             // 
             // Admin_Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PowderBlue;
             ClientSize = new Size(800, 450);
             Controls.Add(btnAdminLogin);
             Controls.Add(txtPassword);

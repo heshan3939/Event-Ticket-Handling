@@ -19,11 +19,11 @@ namespace Event_Ticket_Handling
 
             if (result == DialogResult.Yes)
             {
-                // Close both forms if dashboard is provided
+                
                 dashboardForm?.Close();
                 currentForm.Close();
 
-                // Show login form
+                
                 Attendee_Login loginForm = new Attendee_Login();
                 loginForm.Show();
             }
