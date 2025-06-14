@@ -9,7 +9,7 @@ namespace Event_Ticket_Handling.Services
     public class TicketService
     {
         private string connStr = "server=localhost;user=root;password=;database=eventdata;";
-
+        //git testr
         public DataTable GetTicketsByEvent(int eventID)
         {
             DataTable dt = new DataTable();
