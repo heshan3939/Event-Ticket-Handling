@@ -19,12 +19,6 @@ namespace Event_Ticket_Handling.Models
 
         public Ticket() { }
 
-        public Ticket(int eventID, string ticketType, decimal price, int quantity)
-        {
-            EventID = eventID;
-            TicketType = ticketType;
-            Price = price;
-            Quantity = quantity;
-        }
+      
     }
 }
