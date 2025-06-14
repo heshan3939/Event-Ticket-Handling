@@ -40,6 +40,7 @@
             dgvAttendees.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvAttendees.Location = new Point(53, 85);
             dgvAttendees.Name = "dgvAttendees";
+            dgvAttendees.ReadOnly = true;
             dgvAttendees.RowHeadersWidth = 51;
             dgvAttendees.Size = new Size(702, 338);
             dgvAttendees.TabIndex = 0;

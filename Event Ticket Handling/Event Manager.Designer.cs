@@ -165,6 +165,7 @@
             dataGridViewEvents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewEvents.Location = new Point(375, 12);
             dataGridViewEvents.Name = "dataGridViewEvents";
+            dataGridViewEvents.ReadOnly = true;
             dataGridViewEvents.RowHeadersWidth = 51;
             dataGridViewEvents.Size = new Size(623, 279);
             dataGridViewEvents.TabIndex = 14;

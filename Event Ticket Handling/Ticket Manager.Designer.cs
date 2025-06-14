@@ -60,6 +60,7 @@
             dataGridViewTickets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewTickets.Location = new Point(67, 43);
             dataGridViewTickets.Name = "dataGridViewTickets";
+            dataGridViewTickets.ReadOnly = true;
             dataGridViewTickets.RowHeadersWidth = 51;
             dataGridViewTickets.Size = new Size(691, 206);
             dataGridViewTickets.TabIndex = 1;

@@ -74,6 +74,7 @@
             dgvTickets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTickets.Location = new Point(46, 93);
             dgvTickets.Name = "dgvTickets";
+            dgvTickets.ReadOnly = true;
             dgvTickets.RowHeadersWidth = 51;
             dgvTickets.Size = new Size(724, 188);
             dgvTickets.TabIndex = 8;

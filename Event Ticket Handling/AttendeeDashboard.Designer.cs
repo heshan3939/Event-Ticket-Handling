@@ -60,6 +60,7 @@
             dgvEvents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEvents.Location = new Point(68, 152);
             dgvEvents.Name = "dgvEvents";
+            dgvEvents.ReadOnly = true;
             dgvEvents.RowHeadersWidth = 51;
             dgvEvents.Size = new Size(724, 188);
             dgvEvents.TabIndex = 2;

@@ -40,6 +40,7 @@
             dgvsales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvsales.Location = new Point(101, 127);
             dgvsales.Name = "dgvsales";
+            dgvsales.ReadOnly = true;
             dgvsales.RowHeadersWidth = 51;
             dgvsales.Size = new Size(597, 302);
             dgvsales.TabIndex = 0;
