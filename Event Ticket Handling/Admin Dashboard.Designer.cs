@@ -36,7 +36,7 @@
             // btnManageevent
             // 
             btnManageevent.BackColor = Color.DarkSalmon;
-            btnManageevent.Location = new Point(337, 65);
+            btnManageevent.Location = new Point(410, 90);
             btnManageevent.Name = "btnManageevent";
             btnManageevent.Size = new Size(172, 56);
             btnManageevent.TabIndex = 0;
@@ -47,7 +47,7 @@
             // btnManageattendees
             // 
             btnManageattendees.BackColor = Color.DarkSalmon;
-            btnManageattendees.Location = new Point(337, 174);
+            btnManageattendees.Location = new Point(410, 217);
             btnManageattendees.Name = "btnManageattendees";
             btnManageattendees.Size = new Size(172, 67);
             btnManageattendees.TabIndex = 2;
@@ -58,7 +58,7 @@
             // button1
             // 
             button1.BackColor = Color.DarkSalmon;
-            button1.Location = new Point(337, 290);
+            button1.Location = new Point(410, 363);
             button1.Name = "button1";
             button1.Size = new Size(172, 55);
             button1.TabIndex = 3;
@@ -71,7 +71,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.MenuHighlight;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(984, 533);
             Controls.Add(button1);
             Controls.Add(btnManageattendees);
             Controls.Add(btnManageevent);

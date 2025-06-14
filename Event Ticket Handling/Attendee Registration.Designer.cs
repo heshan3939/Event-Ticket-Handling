@@ -42,7 +42,7 @@
             // btnRegister
             // 
             btnRegister.BackColor = Color.SandyBrown;
-            btnRegister.Location = new Point(338, 319);
+            btnRegister.Location = new Point(333, 332);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(151, 50);
             btnRegister.TabIndex = 23;

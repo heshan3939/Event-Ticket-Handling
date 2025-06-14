@@ -37,19 +37,20 @@
             // 
             // dgvAttendees
             // 
+            dgvAttendees.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvAttendees.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvAttendees.Location = new Point(53, 85);
+            dgvAttendees.Location = new Point(93, 121);
             dgvAttendees.Name = "dgvAttendees";
             dgvAttendees.ReadOnly = true;
             dgvAttendees.RowHeadersWidth = 51;
-            dgvAttendees.Size = new Size(702, 338);
+            dgvAttendees.Size = new Size(733, 338);
             dgvAttendees.TabIndex = 0;
             dgvAttendees.CellContentClick += dgvAttendees_CellContentClick;
             // 
             // cmbEvents
             // 
             cmbEvents.FormattingEnabled = true;
-            cmbEvents.Location = new Point(373, 31);
+            cmbEvents.Location = new Point(359, 40);
             cmbEvents.Name = "cmbEvents";
             cmbEvents.Size = new Size(151, 28);
             cmbEvents.TabIndex = 1;
@@ -58,7 +59,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(268, 31);
+            label1.Location = new Point(246, 40);
             label1.Name = "label1";
             label1.Size = new Size(89, 20);
             label1.TabIndex = 2;
@@ -66,19 +67,21 @@
             // 
             // btnShowAttendees
             // 
-            btnShowAttendees.Location = new Point(530, 31);
+            btnShowAttendees.BackColor = Color.IndianRed;
+            btnShowAttendees.Location = new Point(535, 40);
             btnShowAttendees.Name = "btnShowAttendees";
             btnShowAttendees.Size = new Size(133, 29);
             btnShowAttendees.TabIndex = 3;
             btnShowAttendees.Text = "Show Attendees";
-            btnShowAttendees.UseVisualStyleBackColor = true;
+            btnShowAttendees.UseVisualStyleBackColor = false;
             btnShowAttendees.Click += btnShowAttendees_Click;
             // 
             // View_Attendee
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.MistyRose;
+            ClientSize = new Size(902, 551);
             Controls.Add(btnShowAttendees);
             Controls.Add(label1);
             Controls.Add(cmbEvents);

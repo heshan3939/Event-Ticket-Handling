@@ -48,7 +48,7 @@ namespace Event_Ticket_Handling
 
             if (attendee.Login())
             {
-                MessageBox.Show("Login successful!");
+                
                 this.Hide();
 
                 AttendeeDashboard dashboard = new AttendeeDashboard(attendee.Username, attendee.UserID);

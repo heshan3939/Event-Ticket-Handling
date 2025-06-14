@@ -73,9 +73,9 @@
             // btnLogin
             // 
             btnLogin.BackColor = Color.SandyBrown;
-            btnLogin.Location = new Point(345, 271);
+            btnLogin.Location = new Point(314, 267);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(94, 29);
+            btnLogin.Size = new Size(145, 49);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "LOGIN";
             btnLogin.UseVisualStyleBackColor = false;
@@ -84,7 +84,7 @@
             // btnRegistration
             // 
             btnRegistration.BackColor = Color.SandyBrown;
-            btnRegistration.Location = new Point(259, 342);
+            btnRegistration.Location = new Point(247, 341);
             btnRegistration.Name = "btnRegistration";
             btnRegistration.Size = new Size(275, 47);
             btnRegistration.TabIndex = 5;

@@ -31,7 +31,6 @@
             btnAddevent = new Button();
             btnUpdateevent = new Button();
             btnDeleteevent = new Button();
-            btnRefresh = new Button();
             label1 = new Label();
             txtEventName = new TextBox();
             txtEventID = new TextBox();
@@ -49,48 +48,41 @@
             // 
             // btnAddevent
             // 
-            btnAddevent.Location = new Point(21, 304);
+            btnAddevent.BackColor = Color.LimeGreen;
+            btnAddevent.Location = new Point(25, 359);
             btnAddevent.Name = "btnAddevent";
             btnAddevent.Size = new Size(160, 49);
             btnAddevent.TabIndex = 0;
             btnAddevent.Text = "ADD";
-            btnAddevent.UseVisualStyleBackColor = true;
+            btnAddevent.UseVisualStyleBackColor = false;
             btnAddevent.Click += btnAddevent_Click;
             // 
             // btnUpdateevent
             // 
-            btnUpdateevent.Location = new Point(199, 309);
+            btnUpdateevent.BackColor = Color.Orange;
+            btnUpdateevent.Location = new Point(191, 359);
             btnUpdateevent.Name = "btnUpdateevent";
-            btnUpdateevent.Size = new Size(160, 44);
+            btnUpdateevent.Size = new Size(167, 49);
             btnUpdateevent.TabIndex = 1;
             btnUpdateevent.Text = "UPDATE";
-            btnUpdateevent.UseVisualStyleBackColor = true;
+            btnUpdateevent.UseVisualStyleBackColor = false;
             btnUpdateevent.Click += btnUpdateevent_Click;
             // 
             // btnDeleteevent
             // 
-            btnDeleteevent.Location = new Point(21, 381);
+            btnDeleteevent.BackColor = Color.Red;
+            btnDeleteevent.Location = new Point(97, 430);
             btnDeleteevent.Name = "btnDeleteevent";
             btnDeleteevent.Size = new Size(160, 44);
             btnDeleteevent.TabIndex = 2;
             btnDeleteevent.Text = "DELETE";
-            btnDeleteevent.UseVisualStyleBackColor = true;
+            btnDeleteevent.UseVisualStyleBackColor = false;
             btnDeleteevent.Click += btnDeleteevent_Click;
-            // 
-            // btnRefresh
-            // 
-            btnRefresh.Location = new Point(199, 381);
-            btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(160, 44);
-            btnRefresh.TabIndex = 3;
-            btnRefresh.Text = "REFRESH";
-            btnRefresh.UseVisualStyleBackColor = true;
-            btnRefresh.Click += btnRefresh_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(25, 35);
+            label1.Location = new Point(25, 59);
             label1.Name = "label1";
             label1.Size = new Size(89, 20);
             label1.TabIndex = 4;
@@ -98,14 +90,14 @@
             // 
             // txtEventName
             // 
-            txtEventName.Location = new Point(178, 35);
+            txtEventName.Location = new Point(178, 59);
             txtEventName.Name = "txtEventName";
             txtEventName.Size = new Size(125, 27);
             txtEventName.TabIndex = 5;
             // 
             // txtEventID
             // 
-            txtEventID.Location = new Point(178, 84);
+            txtEventID.Location = new Point(178, 114);
             txtEventID.Name = "txtEventID";
             txtEventID.Size = new Size(125, 27);
             txtEventID.TabIndex = 7;
@@ -113,7 +105,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(25, 84);
+            label2.Location = new Point(25, 114);
             label2.Name = "label2";
             label2.Size = new Size(64, 20);
             label2.TabIndex = 6;
@@ -122,7 +114,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(25, 146);
+            label3.Location = new Point(36, 176);
             label3.Name = "label3";
             label3.Size = new Size(41, 20);
             label3.TabIndex = 8;
@@ -130,7 +122,7 @@
             // 
             // txtVenue
             // 
-            txtVenue.Location = new Point(178, 193);
+            txtVenue.Location = new Point(178, 225);
             txtVenue.Name = "txtVenue";
             txtVenue.Size = new Size(125, 27);
             txtVenue.TabIndex = 11;
@@ -138,7 +130,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(32, 200);
+            label4.Location = new Point(32, 232);
             label4.Name = "label4";
             label4.Size = new Size(57, 20);
             label4.TabIndex = 10;
@@ -146,7 +138,7 @@
             // 
             // txtDescription
             // 
-            txtDescription.Location = new Point(178, 245);
+            txtDescription.Location = new Point(178, 280);
             txtDescription.Name = "txtDescription";
             txtDescription.Size = new Size(125, 27);
             txtDescription.TabIndex = 13;
@@ -154,7 +146,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(32, 252);
+            label5.Location = new Point(32, 287);
             label5.Name = "label5";
             label5.Size = new Size(85, 20);
             label5.TabIndex = 12;
@@ -162,18 +154,19 @@
             // 
             // dataGridViewEvents
             // 
+            dataGridViewEvents.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewEvents.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewEvents.Location = new Point(375, 12);
+            dataGridViewEvents.Location = new Point(377, 42);
             dataGridViewEvents.Name = "dataGridViewEvents";
             dataGridViewEvents.ReadOnly = true;
             dataGridViewEvents.RowHeadersWidth = 51;
-            dataGridViewEvents.Size = new Size(623, 279);
+            dataGridViewEvents.Size = new Size(655, 297);
             dataGridViewEvents.TabIndex = 14;
             dataGridViewEvents.CellContentClick += dataGridViewEvents_CellContentClick;
             // 
             // txtDate
             // 
-            txtDate.Location = new Point(128, 146);
+            txtDate.Location = new Point(139, 176);
             txtDate.Name = "txtDate";
             txtDate.Size = new Size(219, 27);
             txtDate.TabIndex = 15;
@@ -181,19 +174,21 @@
             // 
             // btnManagetickets
             // 
-            btnManagetickets.Location = new Point(603, 335);
+            btnManagetickets.BackColor = Color.MediumTurquoise;
+            btnManagetickets.Location = new Point(584, 422);
             btnManagetickets.Name = "btnManagetickets";
             btnManagetickets.Size = new Size(239, 61);
             btnManagetickets.TabIndex = 16;
             btnManagetickets.Text = "MANAGE TICKETS";
-            btnManagetickets.UseVisualStyleBackColor = true;
+            btnManagetickets.UseVisualStyleBackColor = false;
             btnManagetickets.Click += btnManagetickets_Click;
             // 
             // Event_Manager
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1010, 450);
+            BackColor = Color.Salmon;
+            ClientSize = new Size(1063, 540);
             Controls.Add(btnManagetickets);
             Controls.Add(txtDate);
             Controls.Add(dataGridViewEvents);
@@ -206,7 +201,6 @@
             Controls.Add(label2);
             Controls.Add(txtEventName);
             Controls.Add(label1);
-            Controls.Add(btnRefresh);
             Controls.Add(btnDeleteevent);
             Controls.Add(btnUpdateevent);
             Controls.Add(btnAddevent);
@@ -223,7 +217,6 @@
         private Button btnAddevent;
         private Button btnUpdateevent;
         private Button btnDeleteevent;
-        private Button btnRefresh;
         private Label label1;
         private TextBox txtEventName;
         private TextBox txtEventID;

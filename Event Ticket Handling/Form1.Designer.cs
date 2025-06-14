@@ -36,37 +36,40 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(357, 59);
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(351, 41);
             label1.Name = "label1";
-            label1.Size = new Size(78, 20);
+            label1.Size = new Size(146, 31);
             label1.TabIndex = 0;
-            label1.Text = "WELCOME";
+            label1.Text = "WELCOME ....";
             // 
             // button1
             // 
+            button1.BackColor = Color.DarkSalmon;
             button1.Location = new Point(300, 149);
             button1.Name = "button1";
             button1.Size = new Size(229, 54);
             button1.TabIndex = 1;
             button1.Text = "ADMIN LOGIN";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.LightSkyBlue;
             button2.Location = new Point(300, 241);
             button2.Name = "button2";
             button2.Size = new Size(229, 46);
             button2.TabIndex = 2;
-            button2.Text = "USER LOGIN";
-            button2.UseVisualStyleBackColor = true;
+            button2.Text = "ATTENDEE LOGIN";
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.ForestGreen;
+            BackColor = Color.SlateGray;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);

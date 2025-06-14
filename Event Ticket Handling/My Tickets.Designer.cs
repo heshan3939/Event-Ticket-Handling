@@ -36,30 +36,33 @@
             // 
             // dgvMyTickets
             // 
+            dgvMyTickets.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvMyTickets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMyTickets.Location = new Point(71, 74);
+            dgvMyTickets.Location = new Point(66, 90);
             dgvMyTickets.Name = "dgvMyTickets";
             dgvMyTickets.ReadOnly = true;
             dgvMyTickets.RowHeadersWidth = 51;
-            dgvMyTickets.Size = new Size(654, 208);
+            dgvMyTickets.Size = new Size(800, 208);
             dgvMyTickets.TabIndex = 0;
             // 
             // btnCancelTicket
             // 
-            btnCancelTicket.Location = new Point(323, 327);
+            btnCancelTicket.BackColor = Color.SandyBrown;
+            btnCancelTicket.Location = new Point(398, 351);
             btnCancelTicket.Name = "btnCancelTicket";
             btnCancelTicket.Size = new Size(161, 45);
             btnCancelTicket.TabIndex = 1;
             btnCancelTicket.Text = "CANCEL TICKET";
-            btnCancelTicket.UseVisualStyleBackColor = true;
+            btnCancelTicket.UseVisualStyleBackColor = false;
             btnCancelTicket.Click += btnCancelTicket_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(358, 28);
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(407, 33);
             label1.Name = "label1";
-            label1.Size = new Size(78, 20);
+            label1.Size = new Size(122, 31);
             label1.TabIndex = 2;
             label1.Text = "My Tickets";
             // 
@@ -67,7 +70,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(917, 450);
             Controls.Add(label1);
             Controls.Add(btnCancelTicket);
             Controls.Add(dgvMyTickets);

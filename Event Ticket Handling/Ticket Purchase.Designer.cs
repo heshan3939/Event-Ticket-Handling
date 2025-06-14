@@ -41,50 +41,55 @@
             // 
             // btnLogout
             // 
-            btnLogout.Location = new Point(647, 22);
+            btnLogout.BackColor = Color.Tomato;
+            btnLogout.Location = new Point(797, 22);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(123, 52);
             btnLogout.TabIndex = 11;
             btnLogout.Text = "LOGOUT";
-            btnLogout.UseVisualStyleBackColor = true;
+            btnLogout.UseVisualStyleBackColor = false;
             btnLogout.Click += btnLogout_Click;
             // 
             // btnViewMyTickets
             // 
-            btnViewMyTickets.Location = new Point(485, 319);
+            btnViewMyTickets.BackColor = Color.Goldenrod;
+            btnViewMyTickets.Location = new Point(586, 366);
             btnViewMyTickets.Name = "btnViewMyTickets";
             btnViewMyTickets.Size = new Size(188, 55);
             btnViewMyTickets.TabIndex = 10;
             btnViewMyTickets.Text = "VIEW MY TICKETS";
-            btnViewMyTickets.UseVisualStyleBackColor = true;
+            btnViewMyTickets.UseVisualStyleBackColor = false;
             btnViewMyTickets.Click += btnViewMyTickets_Click;
             // 
             // btnBuyTckets
             // 
-            btnBuyTckets.Location = new Point(123, 366);
+            btnBuyTckets.BackColor = Color.LimeGreen;
+            btnBuyTckets.Location = new Point(157, 366);
             btnBuyTckets.Name = "btnBuyTckets";
             btnBuyTckets.Size = new Size(188, 55);
             btnBuyTckets.TabIndex = 9;
             btnBuyTckets.Text = "BUY TICKETS";
-            btnBuyTckets.UseVisualStyleBackColor = true;
+            btnBuyTckets.UseVisualStyleBackColor = false;
             btnBuyTckets.Click += btnBuyTckets_Click;
             // 
             // dgvTickets
             // 
+            dgvTickets.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvTickets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvTickets.Location = new Point(46, 93);
             dgvTickets.Name = "dgvTickets";
             dgvTickets.ReadOnly = true;
             dgvTickets.RowHeadersWidth = 51;
-            dgvTickets.Size = new Size(724, 188);
+            dgvTickets.Size = new Size(874, 188);
             dgvTickets.TabIndex = 8;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(325, 38);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(395, 46);
             label1.Name = "label1";
-            label1.Size = new Size(120, 20);
+            label1.Size = new Size(156, 28);
             label1.TabIndex = 7;
             label1.Text = "Available Tickets";
             label1.Click += label1_Click;
@@ -100,6 +105,7 @@
             // 
             // txtQuantity
             // 
+            txtQuantity.BackColor = SystemColors.GradientActiveCaption;
             txtQuantity.Location = new Point(195, 316);
             txtQuantity.Name = "txtQuantity";
             txtQuantity.Size = new Size(125, 27);
@@ -118,7 +124,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.LightSeaGreen;
+            ClientSize = new Size(963, 501);
             Controls.Add(label2);
             Controls.Add(txtQuantity);
             Controls.Add(btnLogout);

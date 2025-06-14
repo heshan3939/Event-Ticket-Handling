@@ -41,34 +41,35 @@
             btnAdd = new Button();
             btnEdit = new Button();
             btnDelete = new Button();
-            btnRefresh = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewTickets).BeginInit();
             SuspendLayout();
             // 
             // lblEventName
             // 
             lblEventName.AutoSize = true;
-            lblEventName.Location = new Point(359, 9);
+            lblEventName.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEventName.Location = new Point(478, 26);
             lblEventName.Name = "lblEventName";
-            lblEventName.Size = new Size(50, 20);
+            lblEventName.Size = new Size(76, 31);
             lblEventName.TabIndex = 0;
             lblEventName.Text = "label1";
             lblEventName.Click += label1_Click;
             // 
             // dataGridViewTickets
             // 
+            dataGridViewTickets.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewTickets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewTickets.Location = new Point(67, 43);
+            dataGridViewTickets.Location = new Point(97, 80);
             dataGridViewTickets.Name = "dataGridViewTickets";
             dataGridViewTickets.ReadOnly = true;
             dataGridViewTickets.RowHeadersWidth = 51;
-            dataGridViewTickets.Size = new Size(691, 206);
+            dataGridViewTickets.Size = new Size(870, 206);
             dataGridViewTickets.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(87, 279);
+            label2.Location = new Point(132, 308);
             label2.Name = "label2";
             label2.Size = new Size(67, 20);
             label2.TabIndex = 2;
@@ -78,7 +79,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(87, 325);
+            label3.Location = new Point(132, 354);
             label3.Name = "label3";
             label3.Size = new Size(81, 20);
             label3.TabIndex = 3;
@@ -88,7 +89,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(87, 367);
+            label4.Location = new Point(132, 396);
             label4.Name = "label4";
             label4.Size = new Size(41, 20);
             label4.TabIndex = 4;
@@ -97,7 +98,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(87, 406);
+            label5.Location = new Point(132, 435);
             label5.Name = "label5";
             label5.Size = new Size(65, 20);
             label5.TabIndex = 5;
@@ -105,78 +106,71 @@
             // 
             // txtTicketID
             // 
-            txtTicketID.Location = new Point(200, 276);
+            txtTicketID.Location = new Point(245, 305);
             txtTicketID.Name = "txtTicketID";
             txtTicketID.Size = new Size(125, 27);
             txtTicketID.TabIndex = 6;
             // 
             // txtTickettype
             // 
-            txtTickettype.Location = new Point(200, 322);
+            txtTickettype.Location = new Point(245, 351);
             txtTickettype.Name = "txtTickettype";
             txtTickettype.Size = new Size(125, 27);
             txtTickettype.TabIndex = 7;
             // 
             // txtPrice
             // 
-            txtPrice.Location = new Point(200, 367);
+            txtPrice.Location = new Point(245, 396);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(125, 27);
             txtPrice.TabIndex = 8;
             // 
             // txtQuantity
             // 
-            txtQuantity.Location = new Point(200, 406);
+            txtQuantity.Location = new Point(245, 435);
             txtQuantity.Name = "txtQuantity";
             txtQuantity.Size = new Size(125, 27);
             txtQuantity.TabIndex = 9;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(449, 293);
+            btnAdd.BackColor = Color.LimeGreen;
+            btnAdd.Location = new Point(510, 322);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(94, 29);
+            btnAdd.Size = new Size(130, 56);
             btnAdd.TabIndex = 10;
             btnAdd.Text = "ADD";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(449, 349);
+            btnEdit.BackColor = Color.Chocolate;
+            btnEdit.Location = new Point(673, 325);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(94, 29);
+            btnEdit.Size = new Size(132, 53);
             btnEdit.TabIndex = 11;
             btnEdit.Text = "EDIT";
-            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.UseVisualStyleBackColor = false;
             btnEdit.Click += btnEdit_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(603, 293);
+            btnDelete.BackColor = Color.Brown;
+            btnDelete.Location = new Point(587, 406);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(94, 29);
+            btnDelete.Size = new Size(152, 56);
             btnDelete.TabIndex = 12;
             btnDelete.Text = "DELETE";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
-            // 
-            // btnRefresh
-            // 
-            btnRefresh.Location = new Point(603, 349);
-            btnRefresh.Name = "btnRefresh";
-            btnRefresh.Size = new Size(94, 29);
-            btnRefresh.TabIndex = 13;
-            btnRefresh.Text = "REFRESH";
-            btnRefresh.UseVisualStyleBackColor = true;
-            btnRefresh.Click += button4_Click;
             // 
             // Ticket_Manager
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnRefresh);
+            BackColor = Color.Salmon;
+            ClientSize = new Size(1015, 504);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
             Controls.Add(btnAdd);
@@ -213,6 +207,5 @@
         private Button btnAdd;
         private Button btnEdit;
         private Button btnDelete;
-        private Button btnRefresh;
     }
 }
