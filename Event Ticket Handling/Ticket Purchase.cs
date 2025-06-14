@@ -15,7 +15,7 @@ namespace Event_Ticket_Handling
 {
     public partial class Ticket_Purchase : Form
     {
-        private int currentEventId; // passed from dashboard
+        private int currentEventId; 
         private int attendeeId;
         int selectedEventId;
         private Form dashboardForm;
@@ -23,7 +23,7 @@ namespace Event_Ticket_Handling
         {
             InitializeComponent();
             selectedEventId = evenId;
-            this.attendeeId = attendeeId; // Store the attendee ID for later use
+            this.attendeeId = attendeeId; 
             this.dashboardForm = dashboard;
         }
 
@@ -48,7 +48,7 @@ namespace Event_Ticket_Handling
         private void Ticket_Purchase_Load(object sender, EventArgs e)
         {
             TicketService ticketService = new TicketService();
-            dgvTickets.DataSource = ticketService.GetAvailableTicketsByEvent(selectedEventId);
+            dgvTickets.DataSource = ticketService.GetAvailableTicketsByEvent(selectedEventId);//method created in ticket service
         }
 
         private void btnBuyTckets_Click(object sender, EventArgs e)

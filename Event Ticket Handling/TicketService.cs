@@ -137,7 +137,7 @@ namespace Event_Ticket_Handling.Services
 
                 try
                 {
-                    // Step 1: Get current availability
+                    //  Get current availability
                     string checkQuery = "SELECT Quantity, Sold FROM tbl_ticket WHERE TicketID = @TicketID";
                     int available = 0;
 
@@ -161,7 +161,7 @@ namespace Event_Ticket_Handling.Services
                         }
                     }
 
-                    // Step 2: Check if enough tickets are available
+                    // Check if enough tickets are available
                     if (quantityToBuy > available)
                     {
                         MessageBox.Show($"Only {available} tickets are available. Please reduce quantity.");
@@ -169,7 +169,7 @@ namespace Event_Ticket_Handling.Services
                         return false;
                     }
 
-                    // Step 3: Insert into ticket_purchase
+                    // Insert into ticket_purchase
                     string insertQuery = @"INSERT INTO tbl_ticket_purchase (AttendeeID, TicketID, Quantity, PurchaseDate)
                                    VALUES (@AttendeeID, @TicketID, @Quantity, @PurchaseDate)";
                     using (MySqlCommand insertCmd = new MySqlCommand(insertQuery, conn, transaction))
@@ -181,7 +181,7 @@ namespace Event_Ticket_Handling.Services
                         insertCmd.ExecuteNonQuery();
                     }
 
-                    // Step 4: Update Sold count
+                    // Update Sold count
                     string updateQuery = "UPDATE tbl_ticket SET Sold = Sold + @Quantity WHERE TicketID = @TicketID";
                     using (MySqlCommand updateCmd = new MySqlCommand(updateQuery, conn, transaction))
                     {

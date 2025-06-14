@@ -81,7 +81,7 @@ namespace Event_Ticket_Handling
                 return true;
             }
         }
-
+        //uses in view attendees and view sales
         public DataTable GetAllEvents()
         {
             using (MySqlConnection conn = new MySqlConnection(connStr))

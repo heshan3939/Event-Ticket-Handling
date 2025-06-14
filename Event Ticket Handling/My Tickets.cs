@@ -14,17 +14,17 @@ namespace Event_Ticket_Handling
 {
     public partial class My_Tickets : Form
     {
-        private int attendeeId; // Store the attendee ID for later use
+        private int attendeeId; 
         public My_Tickets(int attendeeId)
         {
             InitializeComponent();
-            this.attendeeId = attendeeId; // Initialize with the attendee ID
+            this.attendeeId = attendeeId; 
         }
 
         private void My_Tickets_Load(object sender, EventArgs e)
         {
             TicketService ticketService = new TicketService();
-            dgvMyTickets.DataSource = ticketService.GetPurchasedTicketsByAttendee(attendeeId);
+            dgvMyTickets.DataSource = ticketService.GetPurchasedTicketsByAttendee(attendeeId);// method created in Ticket service
         }
 
         private void btnCancelTicket_Click(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace Event_Ticket_Handling
                 return;
 
             TicketService ticketService = new TicketService();
-            bool success = ticketService.CancelTicket(purchaseId, ticketId, quantity);
+            bool success = ticketService.CancelTicket(purchaseId, ticketId, quantity);//
 
             if (success)
             {

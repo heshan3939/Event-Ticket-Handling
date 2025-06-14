@@ -43,7 +43,7 @@ namespace Event_Ticket_Handling
 
             try
             {
-                EventService service = new EventService(); // You already have this class
+                EventService service = new EventService();
                 dgvEvents.DataSource = service.GetAllEvents();
             }
             catch (Exception ex)
