@@ -21,10 +21,17 @@ namespace Event_Ticket_Handling
         private void btnRegister_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtName.Text) ||
-                string.IsNullOrWhiteSpace(txtUseremail.Text) ||
-                string.IsNullOrWhiteSpace(txtPassword.Text))
+       string.IsNullOrWhiteSpace(txtUseremail.Text) ||
+       string.IsNullOrWhiteSpace(txtPassword.Text) ||
+       string.IsNullOrWhiteSpace(txtConfirmPassword.Text))
             {
                 MessageBox.Show("Please fill in all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (txtPassword.Text != txtConfirmPassword.Text)
+            {
+                MessageBox.Show("Password and Confirm Password do not match.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -71,6 +78,11 @@ namespace Event_Ticket_Handling
                     MessageBox.Show("Unexpected error: " + ex.Message);
                 }
             }
+        }
+
+        private void Attendee_Registration_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

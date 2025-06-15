@@ -131,6 +131,7 @@
             Controls.Add(label1);
             Name = "Attendee_Registration";
             Text = "Attendee_Registration";
+            Load += Attendee_Registration_Load;
             ResumeLayout(false);
             PerformLayout();
         }
